@@ -4,6 +4,7 @@ import './style.css';
 // rutas de archivos
 import { run as runTriangle } from './shapes/triangle.ff';
 import { run as runQuad } from './shapes/quad.ff';
+import { run as runHexagon} from './shapes/hexagon.ff'
 
 
 // new applied by us
@@ -24,11 +25,12 @@ const colorMap: Record<string, [number, number, number, number]> = {
 //
 
 type Mode = 'shape' | 'color';
-type ModeFig = 'triangle' | 'quad';
+type ModeFig = 'triangle' | 'quad' | 'hexagon';
 
 const figures: Record<ModeFig, { file: string; run: (canvas: HTMLCanvasElement, customColor?: [number, number, number, number]) => void }> = {
   triangle: { file: 'triangle.ff.ts', run: runTriangle },
   quad: { file: 'quad.ff.ts',  run: runQuad },
+  hexagon: { file: 'hexagon.ff.ts', run: runHexagon},
 };
 
 const stage = document.getElementById('stage')!;
