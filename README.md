@@ -6,4 +6,6 @@
 
 # ¿Cómo correr?
 
-Ejecutar ```npm run dev``` en el directorio
+Ejecutar ```npm install``` para instalar todas las dependencias necesarias
+
+Ejecutar ```npm run dev``` en el directorio para correr el proyecto
